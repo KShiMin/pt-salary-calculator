@@ -38,7 +38,24 @@ Before you begin, ensure you have met the following requirements:
 
 ## Project Structure 
 
+The project structure is as follows:
+``` sh
+.
+├── app.js
+├── LICENSE
+├── package.json
+├── README.md
+└── views
+    ├── home.ejs
+    ├── partials
+    │   ├── head.ejs
+    │   └── navbar.ejs
+    └── salary-cal.ejs
+```
+
 ## License 
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/KShiMin/pt-salary-calculator/blob/docs/LICENSE) file for more details.
 
 ## Contributing 
 
