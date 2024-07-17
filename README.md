@@ -1,6 +1,6 @@
 # pt-salary-calculator
 
-Part Time Salary Calculator helps centralise and track my part-time earnings and job details from my current and past jobs all into one website. This will ease the need of attempting to update the formulus in Google Sheets consistently and adding new tabs for new jobs taken.
+Part Time Salary Calculator helps centralise and track my part-time earnings and job details from my current and past jobs all into one website. This will ease the need of attempting to update the formulas in Google Sheets consistently and adding new tabs for new jobs taken.
 
 ## Technologies
 - NodeJS
