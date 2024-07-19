@@ -2,13 +2,61 @@
 <html lang="en">
 <head>
     <%- include('partials/head'); %>
+    <link rel="stylesheet" href="salary-cal.css">
     <title>Home</title>
 </head>
 <body>
     <%- include('partials/navbar'); %>
-    <h2 style="font-weight: bolder;">Salary Calculator!</h2>
-    <form action="">
 
-    </form>
+    <div class="m-auto overall">
+        <h2>Salary Calculator!</h2>
+        <form action="/" method="POST">
+            <div class="row mb-4">
+                <label for="jr" class="col-sm-4">Job Role:   </label>
+                <div class="col-sm-7">
+                    <select name="jr" id="jr" class="form-select" required>
+                        <option value=""></option>
+                        <option value="AS">Arcade Studio - Service Crew</option>
+                        <option value="RT">Robothink - Python Instructor</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label for="dow" class="col-sm-4">Date of Work:</label>
+                <div class="col-sm-4">
+                    <input type="date" name="dow" id="dow" class="form-control" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label for="startTime" class="col-sm-4">Start Time:</label>
+                <div class="col-sm-3">
+                    <input type="time" name="startTime" id="startTime" class="form-control" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label for="endTime" class="col-sm-4">End Time:</label>
+                <div class="col-sm-3">
+                    <input type="time" name="endTime" id="endTime" class="form-control" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label for="bh" class="col-sm-4">Break Hours:</label>
+                <div class="col-sm-4 icons" id="bh-icons">
+                    <input type="number" name="bh" id="bh" class="form-control" required>
+                    <span>hr</span>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <label for="claims" class="col-sm-4">Claims (If applicable):</label>
+                <div class="col-sm-5 icons" id="c-icons">
+                    <span>$</span>
+                    <input type="text" class="form-control">                    
+                </div>
+            </div>
+            <div class="text-center mt-5 mb-2">
+                <input type="submit" value="Submit Time-Sheet!" class="btn btn-primary">
+            </div>
+        </form>        
+    </div>
 </body>
 </html>

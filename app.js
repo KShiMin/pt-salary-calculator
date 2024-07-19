@@ -3,10 +3,17 @@ const port = 8080
 
 const app = express();
 
+// set stylesheet
+app.use(express.static(__dirname + '/public/stylesheets'));
+
 // setting view engine to ejs
 app.set('view engine', 'ejs')
 
 app.get('/', function(req, res){
+    res.render('home');
+});
+
+app.post('/', function(req, res){
     res.render('home');
 });
 
