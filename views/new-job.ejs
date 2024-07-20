@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head'); %>
+    <link rel="stylesheet" href="salary-cal.css">
+    <title>Adding A Job</title>
+</head>
+<body>
+    <%- include('partials/navbar'); %>
+
+    <div class="m-auto overall">
+        <h2>~New Part Time Job~</h2>
+        <form action="/" method="POST">
+            <div class="row mb-4">
+                <span class="col-sm-1"></span>
+                <label for="jr" class="col-sm-3">Company Name:   </label>
+                <div class="col-sm-7">
+                    <input type="text" name="company-name" id="company-name" class="form-control" required>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <span class="col-sm-1"></span>
+                <label for="dow" class="col-sm-3">Job Role:</label>
+                <div class="col-sm-7">
+                    <input type="text" name="jr" id="jr" class="form-control" required>
+                </div>
+            </div>
+            <div class="row mb-2">
+                <span class="col-sm-1"></span>
+                <label for="startTime" class="col-sm-3">Job Description:</label>
+            </div>
+            <div class="row mb-4">
+                <span class="col-sm-1"></span>
+                <div class="col-sm-11">
+                   <textarea name="jd" id="jd" rows="10" class="form-control"></textarea> 
+                </div>
+            </div>
+            <div class="row mb-4">
+                <span class="col-sm-1"></span>
+                <label for="endTime" class="col-sm-3">Hourly Rates:</label>
+                <div class="col-sm-7">
+                    <input type="text" name="jr" id="jr" class="form-control" required>
+                </div>
+            </div>
+            <div class="text-center mt-5 mb-2">
+                <input type="submit" value="Add New Job!" class="btn btn-primary">
+            </div>
+        </form>        
+    </div>
+</body>
+</html>

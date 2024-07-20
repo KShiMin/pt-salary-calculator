@@ -1,0 +1,11 @@
+.hist-overall{
+    width: 90%;
+}
+
+table{
+    border: 0.25rem solid;
+}
+
+thead{
+    text-align: center;
+}

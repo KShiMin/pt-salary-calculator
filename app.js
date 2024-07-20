@@ -21,6 +21,13 @@ app.get('/salary-cal', function(req, res){
     res.render('salary-cal');
 });
 
+app.get('/add-new-job', function(req, res){
+    res.render(('new-job'))
+})
+
+app.get('/history', function(req,res){
+    res.render('history')
+})
 
 let server = app.listen(port, ()=>{
     console.log(`Server listening on port ${port}`);
